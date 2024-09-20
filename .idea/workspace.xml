@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/05d32396-8550-4880-b013-b6bc0cfed2fe-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6789ef0e-215e-4b82-bf31-0b53656aae27-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/72de939d-f09c-43e0-9b27-9bb70c4c3f36-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/93ec9905-e15f-40c1-a7af-77177a861b07-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cc2cc955-1979-48e8-be83-662fa2ae2f10-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f766af61-ffab-48f8-af8f-ebd9586fa746-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/InitDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/integrations/testrail/TestRailStarter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ScreenshotListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Waiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/allure.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2mC0brl8xzmECbYrzId4ZNQUrK8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Maven.finalProject [clean].executor": "Run",
+    "Maven.finalProject [install].executor": "Run",
+    "Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:aggregate].executor": "Run",
+    "Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:install].executor": "Run",
+    "Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:report].executor": "Run",
+    "Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:serve].executor": "Run",
+    "Maven.finalProject [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.finalProject [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.AutoritationTest.executor": "Run",
+    "TestNG.AutoritationTest.openMainPageTest.executor": "Run",
+    "TestNG.AutoritationTest.registrationInvalidTest.executor": "Run",
+    "TestNG.AutoritationTest.registrationTest (1).executor": "Debug",
+    "TestNG.AutoritationTest.registrationTest.executor": "Run",
+    "TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/mosco/IdeaProjects/finalProject/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.171875",
+    "project.structure.side.proportion": "0.24557261",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mosco\IdeaProjects\finalProject" />
+      <recent name="C:\Users\mosco\IdeaProjects\finalProject\target" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.AutoritationTest.registrationInvalidTest">
+    <configuration name="AutoritationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AutoritationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutoritationTest.openMainPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AutoritationTest" />
+      <option name="METHOD_NAME" value="openMainPageTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutoritationTest.registrationInvalidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AutoritationTest" />
+      <option name="METHOD_NAME" value="registrationInvalidTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutoritationTest.registrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AutoritationTest" />
+      <option name="METHOD_NAME" value="registrationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.AutoritationTest.registrationInvalidTest" />
+        <item itemvalue="TestNG.AutoritationTest" />
+        <item itemvalue="TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml" />
+        <item itemvalue="TestNG.AutoritationTest.openMainPageTest" />
+        <item itemvalue="TestNG.AutoritationTest.registrationTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="" />
+      <created>1726565328567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726565328567</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/core/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
