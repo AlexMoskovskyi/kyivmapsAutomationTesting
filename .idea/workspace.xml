@@ -7,31 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/05d32396-8550-4880-b013-b6bc0cfed2fe-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6789ef0e-215e-4b82-bf31-0b53656aae27-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/72de939d-f09c-43e0-9b27-9bb70c4c3f36-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/93ec9905-e15f-40c1-a7af-77177a861b07-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cc2cc955-1979-48e8-be83-662fa2ae2f10-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f766af61-ffab-48f8-af8f-ebd9586fa746-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/InitDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/integrations/testrail/TestRailStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ScreenshotListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Waiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/allure.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="Add project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +57,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/mosco/IdeaProjects/finalProject/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.171875",
     "project.structure.side.proportion": "0.24557261",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
@@ -194,6 +170,23 @@
       <option name="presentableId" value="Default" />
       <updated>1726565328567</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add project">
+      <option name="closed" value="true" />
+      <created>1726830526304</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726830526304</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add project">
+      <option name="closed" value="true" />
+      <created>1726830540931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726830540931</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +199,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
