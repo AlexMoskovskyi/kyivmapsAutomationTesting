@@ -55,8 +55,8 @@ public class AutoritationTest extends BaseTest {
     @Story("Вхід на головну сторінку та реєстрація з невалідним email ")
     @Test(priority = 2)
     public void registrationInvalidTest() {
-        Header header = new Header();
-        header.clickOnLoginButton();
+        //Header header = new Header();
+        //header.clickOnLoginButton();
         String emailInvalid = "moscow5@i.ua";
         WebElement loginButton = webDriver.findElement(By.xpath("//*[@id=\"lgn\"]"));
         waiter.waitForElementClickable(loginButton).click();
