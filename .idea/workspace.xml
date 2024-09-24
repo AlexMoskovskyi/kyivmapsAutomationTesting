@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="Project updated" />
+    <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="Project updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/InitDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/InitDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Header.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,8 +71,9 @@
     "TestNG.AutoritationTest.registrationTest (1).executor": "Debug",
     "TestNG.AutoritationTest.registrationTest.executor": "Run",
     "TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml.executor": "Run",
+    "TestNG.RegistrationTest.executor": "Run",
     "TestNG.RegistrationTest.openSignUpPage.executor": "Debug",
-    "TestNG.RegistrationTest.registrationTest.executor": "Debug",
+    "TestNG.RegistrationTest.registrationTest.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/mosco/IdeaProjects/finalProject/src/main/java/org/example/Main.java",
@@ -90,7 +95,7 @@
       <recent name="C:\Users\mosco\IdeaProjects\finalProject\target" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationTest.registrationTest">
+  <component name="RunManager" selected="TestNG.RegistrationTest">
     <configuration name="Header" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pages.Header" />
       <module name="finalProject" />
@@ -100,24 +105,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AutoritationTest.registrationInvalidTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="finalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AutoritationTest" />
-      <option name="METHOD_NAME" value="registrationInvalidTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,6 +121,23 @@
       <option name="MAIN_CLASS_NAME" value="tests.AutoritationTest" />
       <option name="METHOD_NAME" value="registrationTest" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -178,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RegistrationTest" />
         <item itemvalue="TestNG.RegistrationTest.registrationTest" />
         <item itemvalue="TestNG.RegistrationTest.openSignUpPage" />
         <item itemvalue="Application.Header" />
         <item itemvalue="TestNG.AutoritationTest.registrationTest" />
-        <item itemvalue="TestNG.AutoritationTest.registrationInvalidTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727167583269</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Project updated">
+      <option name="closed" value="true" />
+      <created>1727168044196</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727168044196</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,16 +295,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/utils/Waiter.java</url>
           <line>22</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java</url>

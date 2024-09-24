@@ -19,7 +19,7 @@ public class Header extends BasePage {
     private WebElement SEARCH_FIELD;
 
     @FindBy(xpath = "//*[@id=\"lgn\"]")
-    private WebElement LOGIN_BUTTON;
+    protected WebElement LOGIN_BUTTON;
 
     @FindBy(xpath = "//*[@id=\"user-email\"]")
     private WebElement USER_EMAIL;
@@ -31,7 +31,7 @@ public class Header extends BasePage {
     private WebElement ENTER_BUTTON;
 
     @FindBy (xpath = "//*[@class=\"signup-popup\"]")
-    private WebElement SIGN_UP_BUTTON;
+    protected WebElement SIGN_UP_BUTTON;
 
     @FindBy(xpath = "//*[@class=\"header-td td-add tt-container\"]")
     private WebElement ADD_EVENT_BUTTON;

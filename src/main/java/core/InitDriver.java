@@ -25,8 +25,10 @@ public class InitDriver {
     }
 
     public static WebDriver getWebDriver() {
-
-        return null;
+        if(webDriver == null) {
+            initiateWebDriver();
+        }
+        return webDriver;
     }
 }
 
