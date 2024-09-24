@@ -10,31 +10,46 @@ public class Header extends BasePage {
     protected String password = "asdfghjk";
 
     @FindBy(xpath = "//*[@id=\"menu-toggle\"]")
-    private WebElement MENU_TOGGLE;
+    protected WebElement MENU_TOGGLE;
 
     @FindBy(xpath = "//*[@class=\"show-search\"]")
-    private WebElement SEARCH_BUTTON;
+    protected WebElement SEARCH_BUTTON;
 
     @FindBy(xpath = "//*[@id=\"main-search\"]")
-    private WebElement SEARCH_FIELD;
+    protected WebElement SEARCH_FIELD;
 
     @FindBy(xpath = "//*[@id=\"lgn\"]")
-    protected WebElement LOGIN_BUTTON;
+    public WebElement LOGIN_BUTTON;
+
+    @FindBy(xpath = "//*[@id=\"user-menu-btn\"]")
+    protected WebElement USER_MENU_BUTTON;
+
+    @FindBy(xpath = "//*[@class=\"facebook auth-link\"]")
+    public WebElement FACEBOOK_AUTH_BUTTON;
+
+    @FindBy(xpath = "//*[@class=\"google auth-link\"]")
+    public WebElement GOOGLE_AUTH_BUTTON;
 
     @FindBy(xpath = "//*[@id=\"user-email\"]")
-    private WebElement USER_EMAIL;
+    protected WebElement USER_EMAIL;
 
     @FindBy(xpath = "//*[@id=\"user-passwordlogin\"]")
-    private WebElement USER_PASSWORD;
+    protected WebElement USER_PASSWORD;
 
     @FindBy(xpath = "//*[@type=\"submit\"][@class=\"btn btn-primary\"]")
-    private WebElement ENTER_BUTTON;
+    protected WebElement ENTER_BUTTON;
 
     @FindBy (xpath = "//*[@class=\"signup-popup\"]")
     protected WebElement SIGN_UP_BUTTON;
 
     @FindBy(xpath = "//*[@class=\"header-td td-add tt-container\"]")
-    private WebElement ADD_EVENT_BUTTON;
+    protected WebElement ADD_EVENT_BUTTON;
+
+    @Step("Натиснути кнопку ")
+    public Header clickOnButton(WebElement webElement) {
+        waiter.waitForElementClickable(webElement).click();
+        return this;
+    }
 
     @Step("Натиснути кнопку авторизації")
     public Header clickOnLoginButton() {
@@ -67,10 +82,4 @@ public class Header extends BasePage {
         waiter.waitForElementVisibility(SEARCH_FIELD).sendKeys(text);
         return this;
     }
-
-//    @Step("Натиснути на кнопку пошуку")
-//    public ResultsPage clickOnSearchButton() {
-//        element.scrollAndClickOnElement(SEARCH_BUTTON);
-//        return new ResultsPage();
-//    }
 }

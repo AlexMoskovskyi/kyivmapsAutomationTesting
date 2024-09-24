@@ -2,70 +2,66 @@ package tests;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
+import io.qameta.allure.Step;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.Header;
 import pages.SignUpPage;
 
 public class RegistrationTest extends BaseTest{
     @Epic("Test1.1 Реєстрація")
-    @Story("Вхід на головну сторінку та реєстрація")
-    @Test
+    @Story("Вхід на головну сторінку та реєстрація ового користувача")
+    @Test(groups = "main group", enabled = true)
     public void registrationTest(){
         Header header = new Header();
         header.clickOnLoginButton().clickOnSignUpButton();
         SignUpPage signUpPage = new SignUpPage();
-        signUpPage.inputEmailIntoField().inputFirstNameIntoField().
-                inputLastNameIntoField().inputPasswordIntoField().clickOnRegistrationRulesButton().
+        signUpPage.inputEmailIntoField().
+                inputFirstNameIntoField().
+                inputLastNameIntoField().
+                inputPasswordIntoField().
+                clickOnRegistrationRulesButton().
                 clickOnRegistrationButton();
-
-        //WebElement loginButton = webDriver.findElement(By.xpath("//*[@id=\"lgn\"]"));
-        //waiter.waitForElementClickable(loginButton).click();
-//        WebElement signup = webDriver.findElement(By.xpath("//*[@class=\"signup-popup\"]"));
-//        waiter.waitForElementClickable(signup).click();
-//        WebElement regEmail = webDriver.findElement(By.xpath("//*[@id=\"signupform-email\"]"));
-//        waiter.waitForElementClickable(regEmail).sendKeys(email, Keys.ENTER);
-//        WebElement regFirstName = webDriver.findElement(By.xpath("//*[@id=\"signupform-first_name\"]"));
-//        waiter.waitForElementClickable(regFirstName).sendKeys(firstName, Keys.ENTER);
-//        WebElement regLastName = webDriver.findElement(By.xpath("//*[@id=\"signupform-last_name\"]"));
-//        waiter.waitForElementClickable(regLastName).sendKeys(lastName, Keys.ENTER);
-//        WebElement regPassword = webDriver.findElement(By.xpath("//*[@id=\"signupform-password\"]"));
-//        waiter.waitForElementClickable(regPassword).sendKeys(password, Keys.ENTER);
-//        WebElement regRulesButton = webDriver.findElement(By.xpath("//*[@class=\"cbx-icon\"]"));
-//        waiter.waitForElementClickable(regRulesButton).click();
-//        WebElement regButton = webDriver.findElement(By.xpath("//*[@class=\"btn btn-primary g-recaptcha recaptcha\"]"));
-//        WebElement regButton = webDriver.findElement(By.xpath("//*[@id=\"recaptchaButton45271751a5b0424c4f284748b1057fd9\"]"));
-//        waiter.waitForElementClickable(regButton).click();
-
+        String expectedResult = "Ви успішно зареєстровані!";
+       Assert.assertEquals(signUpPage.REGISTRATION_COMPLETED.getText(), expectedResult);
     }
 
     @Epic("Test1.2 Реєстрація з невалідним email")
     @Story("Вхід на головну сторінку та реєстрація з невалідним email ")
-    @Test(priority = 2, enabled = false)
+    @Test(groups = "main group", priority = 2, enabled = true)
     public void registrationInvalidTest() {
+        Header header = new Header();
+        header.clickOnLoginButton().clickOnSignUpButton();
+        SignUpPage signUpPage = new SignUpPage();
+        signUpPage.inputInvalidEmailIntoField().
+                inputFirstNameIntoField().
+                inputLastNameIntoField().
+                inputPasswordIntoField().
+                clickOnRegistrationRulesButton().
+                clickOnRegistrationButton();
+        Assert.assertTrue(signUpPage.INVALID_REGISTRATION.isDisplayed());
+    }
 
-//        String emailInvalid = "moscow5@i.ua";
-//        WebElement loginButton = webDriver.findElement(By.xpath("//*[@id=\"lgn\"]"));
-//        waiter.waitForElementClickable(loginButton).click();
-//        WebElement signup = webDriver.findElement(By.xpath("//*[@class=\"signup-popup\"]"));
-//        waiter.waitForElementClickable(signup).click();
-//        WebElement regEmail = webDriver.findElement(By.xpath("//*[@id=\"signupform-email\"]"));
-//        waiter.waitForElementClickable(regEmail).sendKeys(emailInvalid, Keys.ENTER);
-//        WebElement regFirstName = webDriver.findElement(By.xpath("//*[@id=\"signupform-first_name\"]"));
-//        waiter.waitForElementClickable(regFirstName).sendKeys(firstName, Keys.ENTER);
-//        WebElement regLastName = webDriver.findElement(By.xpath("//*[@id=\"signupform-last_name\"]"));
-//        waiter.waitForElementClickable(regLastName).sendKeys(lastName, Keys.ENTER);
-//        WebElement regPassword = webDriver.findElement(By.xpath("//*[@id=\"signupform-password\"]"));
-//        waiter.waitForElementClickable(regPassword).sendKeys(password, Keys.ENTER);
-//        WebElement regRulesButton = webDriver.findElement(By.xpath("//*[@class=\"cbx-icon\"]"));
-//        waiter.waitForElementClickable(regRulesButton).click();
-//        WebElement regButton = webDriver.findElement(By.xpath("//*[@class=\"btn btn-primary g-recaptcha recaptcha\"]"));
-//        waiter.waitForElementClickable(regButton).click();
-//        WebElement invalidRegistration = webDriver.findElement(By.xpath("//*[@class=\"help-block help-block-error\"]"));
-//        String expectedResult = "Ця електронна адреса вже зареєстрована";
-//        System.out.println(invalidRegistration.getText());
-        //Assert.assertEquals(invalidRegistration.getText(), expectedResult);
+    @Epic("Test1.3 Реєстрація за допомогою аккаунту facebook")
+    @Story("Вхід на головну сторінку та реєстрація за допомогою аккаунту facebook ")
+    @Test(groups = "main group", priority = 3, enabled = true)
+    public void registrationWithFacebook() {
+        Header header = new Header();
+        header.clickOnLoginButton().clickOnButton(header.FACEBOOK_AUTH_BUTTON);
+        String actualResult = webDriver.getCurrentUrl();
+        String expectedResult = "facebook.com";
+        Assert.assertTrue(actualResult.contains(expectedResult));
+    }
 
-
+    @Epic("Test1.3 Реєстрація за допомогою аккаунту google")
+    @Story("Вхід на головну сторінку та реєстрація за допомогою аккаунту google ")
+    @Test(groups = "main group", priority = 4, enabled = true)
+    public void registrationWithGoogle() {
+        Header header = new Header();
+        header.clickOnLoginButton().clickOnButton(header.GOOGLE_AUTH_BUTTON);
+        String actualResult = webDriver.getCurrentUrl();
+        String expectedResult = "accounts.google.com";
+        Assert.assertTrue(actualResult.contains(expectedResult));
     }
 
 }
