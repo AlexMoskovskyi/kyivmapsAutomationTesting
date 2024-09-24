@@ -7,14 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="AutoritationTest updated">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="Project updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,7 +227,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726831395308</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Project updated">
+      <option name="closed" value="true" />
+      <created>1727167290329</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727167290329</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Project updated">
+      <option name="closed" value="true" />
+      <created>1727167382272</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727167382272</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +260,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add project" />
     <MESSAGE value="AutoritationTest updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="AutoritationTest updated" />
+    <MESSAGE value="Project updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
