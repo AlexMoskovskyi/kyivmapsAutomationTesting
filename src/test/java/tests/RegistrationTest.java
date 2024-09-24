@@ -1,37 +1,22 @@
 package tests;
 
-import core.InitDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.Header;
-import utils.Waiter;
+import pages.SignUpPage;
 
-import java.util.Iterator;
-import java.util.Set;
-
-public class AutoritationTest extends BaseTest {
-//    private String email = "mіw5@i.ua";
-//    private String password = "asdfghjk";
-//    private String firstName = "Alex";
-//    private String lastName = "MscW";
-
-    @Epic("Test2.1 Авторизація")
-    @Story("Вхід на головну сторінку та авторизація")
-    @Test(priority = 1, enabled = true)
-    public void authorizationTest() {
+public class RegistrationTest extends BaseTest{
+    @Epic("Test1.1 Реєстрація")
+    @Story("Вхід на головну сторінку та реєстрація")
+    @Test
+    public void registrationTest(){
         Header header = new Header();
-        header.clickOnLoginButton().inputLoginData().clickOnEnterButton();
+        header.clickOnSignUpButton();
+        SignUpPage signUpPage = new SignUpPage();
+        signUpPage.inputEmailIntoField().inputFirstNameIntoField().
+                inputLastNameIntoField().clickOnRegistrationRulesButton().
+                clickOnRegistrationButton();
 
         //WebElement loginButton = webDriver.findElement(By.xpath("//*[@id=\"lgn\"]"));
         //waiter.waitForElementClickable(loginButton).click();
@@ -57,6 +42,7 @@ public class AutoritationTest extends BaseTest {
     @Story("Вхід на головну сторінку та реєстрація з невалідним email ")
     @Test(priority = 2, enabled = false)
     public void registrationInvalidTest() {
+
 //        String emailInvalid = "moscow5@i.ua";
 //        WebElement loginButton = webDriver.findElement(By.xpath("//*[@id=\"lgn\"]"));
 //        waiter.waitForElementClickable(loginButton).click();
@@ -82,19 +68,5 @@ public class AutoritationTest extends BaseTest {
 
     }
 
-    @Epic("Test1.3 Авторизація")
-    @Story("Вхід на головну сторінку та авторизація")
-    @Test(priority = 3, enabled = false)
-    public void autorisationTest() throws InterruptedException {
-        String autEmail = "moscow5@i.ua";
-        //Header header = new Header();
-        //header.LOGIN_BUTTON.click();
-//        WebElement loginButton = webDriver.findElement(By.xpath("//*[@id=\"lgn\"]"));
-//        waiter.waitForElementClickable(loginButton).click();
-//        WebElement userEmail = webDriver.findElement(By.xpath("//*[@id=\"user-email\"]"));
-//        waiter.waitForElementClickable(userEmail).sendKeys(autEmail, Keys.ENTER);
-//        WebElement userPassword = webDriver.findElement(By.xpath("//*[@id=\"user-passwordlogin\"]"));
-//        waiter.waitForElementClickable(userPassword).sendKeys(password, Keys.ENTER);
-
-    }
 }
+

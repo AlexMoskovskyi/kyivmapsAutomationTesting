@@ -10,14 +10,11 @@ import utils.Waiter;
 
 public class BasePage {
     protected Waiter waiter;
-    protected Element element;
-    protected WebDriver webDriver;
+   // protected Element element;
 
     public BasePage() {
-       // webDriver = InitDriver.initiateWebDriver();
-       // waiter = new Waiter(webDriver);
-        this.element = new Element();
-        this.waiter = new Waiter(webDriver);
-        PageFactory.initElements(webDriver, this);
+       // this.element = new Element();
+        this.waiter = new Waiter(InitDriver.getWebDriver());
+        PageFactory.initElements(InitDriver.getWebDriver(),this);
     }
 }

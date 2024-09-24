@@ -5,24 +5,59 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class Header extends BasePage {
+
+    protected String trueEmail = "moscow5@i.ua";
+    protected String password = "asdfghjk";
+
     @FindBy(xpath = "//*[@id=\"menu-toggle\"]")
-    protected WebElement MENU_TOGGLE;
+    private WebElement MENU_TOGGLE;
 
     @FindBy(xpath = "//*[@class=\"show-search\"]")
-    protected WebElement SEARCH_BUTTON;
+    private WebElement SEARCH_BUTTON;
 
     @FindBy(xpath = "//*[@id=\"main-search\"]")
-    protected WebElement SEARCH_FIELD;
+    private WebElement SEARCH_FIELD;
 
     @FindBy(xpath = "//*[@id=\"lgn\"]")
-    public WebElement LOGIN_BUTTON;
+    private WebElement LOGIN_BUTTON;
+
+    @FindBy(xpath = "//*[@id=\"user-email\"]")
+    private WebElement USER_EMAIL;
+
+    @FindBy(xpath = "//*[@id=\"user-passwordlogin\"]")
+    private WebElement USER_PASSWORD;
+
+    @FindBy(xpath = "//*[@type=\"submit\"][@class=\"btn btn-primary\"]")
+    private WebElement ENTER_BUTTON;
+
+    @FindBy (xpath = "//*[@class=\"signup-popup\"]")
+    private WebElement SIGN_UP_BUTTON;
 
     @FindBy(xpath = "//*[@class=\"header-td td-add tt-container\"]")
-    protected WebElement ADD_EVENT_BUTTON;
+    private WebElement ADD_EVENT_BUTTON;
 
-    @Step("Натиснути ")
+    @Step("Натиснути кнопку авторизації")
     public Header clickOnLoginButton() {
         waiter.waitForElementClickable(LOGIN_BUTTON).click();
+        return this;
+    }
+
+    @Step("Вставити в поля емеил та пароль")
+    public Header inputLoginData() {
+        waiter.waitForElementVisibility(USER_EMAIL).sendKeys(trueEmail);
+        waiter.waitForElementVisibility(USER_PASSWORD).sendKeys(password);
+        return this;
+    }
+
+    @Step("Натиснути кнопку входу в аккаунт ")
+    public Header clickOnEnterButton() {
+        waiter.waitForElementClickable(ENTER_BUTTON).click();
+        return this;
+    }
+
+    @Step("Натиснути кнопку реєстрация ")
+    public Header clickOnSignUpButton() {
+        waiter.waitForElementClickable(SIGN_UP_BUTTON).click();
         return this;
     }
 

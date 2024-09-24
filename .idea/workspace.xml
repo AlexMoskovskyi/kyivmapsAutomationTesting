@@ -7,7 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="Add project" />
+    <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="AutoritationTest updated">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlexMoskovskyi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AlexMoskovskyi/finalProject&quot;,
+    &quot;accountId&quot;: &quot;37f4a6a5-7feb-4928-ab50-f3562c439138&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -36,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Header.executor": "Run",
     "Application.Main.executor": "Run",
     "Maven.finalProject [clean].executor": "Run",
     "Maven.finalProject [install].executor": "Run",
@@ -54,6 +74,8 @@
     "TestNG.AutoritationTest.registrationTest (1).executor": "Debug",
     "TestNG.AutoritationTest.registrationTest.executor": "Run",
     "TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml.executor": "Run",
+    "TestNG.RegistrationTest.openSignUpPage.executor": "Debug",
+    "TestNG.RegistrationTest.registrationTest.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/mosco/IdeaProjects/finalProject/src/main/java/org/example/Main.java",
@@ -61,6 +83,12 @@
     "project.structure.proportion": "0.171875",
     "project.structure.side.proportion": "0.24557261",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "module"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -69,38 +97,16 @@
       <recent name="C:\Users\mosco\IdeaProjects\finalProject\target" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AutoritationTest.registrationInvalidTest">
-    <configuration name="AutoritationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.RegistrationTest.registrationTest">
+    <configuration name="Header" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pages.Header" />
       <module name="finalProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AutoritationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AutoritationTest.openMainPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="finalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AutoritationTest" />
-      <option name="METHOD_NAME" value="openMainPageTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,10 +147,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest.openSignUpPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="finalProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTest" />
+      <option name="METHOD_NAME" value="openSignUpPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest.registrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTest" />
+      <option name="METHOD_NAME" value="registrationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -153,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AutoritationTest.registrationInvalidTest" />
-        <item itemvalue="TestNG.AutoritationTest" />
-        <item itemvalue="TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml" />
-        <item itemvalue="TestNG.AutoritationTest.openMainPageTest" />
+        <item itemvalue="TestNG.RegistrationTest.registrationTest" />
+        <item itemvalue="TestNG.RegistrationTest.openSignUpPage" />
+        <item itemvalue="Application.Header" />
         <item itemvalue="TestNG.AutoritationTest.registrationTest" />
+        <item itemvalue="TestNG.AutoritationTest.registrationInvalidTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +218,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726830540931</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add project">
+      <option name="closed" value="true" />
+      <created>1726831032620</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726831032620</updated>
+    </task>
+    <task id="LOCAL-00004" summary="AutoritationTest updated">
+      <option name="closed" value="true" />
+      <created>1726831395308</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726831395308</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,7 +250,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add project" />
+    <MESSAGE value="AutoritationTest updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="AutoritationTest updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -211,6 +260,20 @@
           <url>file://$PROJECT_DIR$/src/main/java/core/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/Waiter.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java</url>
+          <line>87</line>
+          <properties class="tests.AutoritationTest" method="autorisationTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
