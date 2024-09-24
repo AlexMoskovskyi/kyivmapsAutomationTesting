@@ -12,7 +12,7 @@ public class RegistrationTest extends BaseTest{
     @Test
     public void registrationTest(){
         Header header = new Header();
-        header.clickOnSignUpButton();
+        header.clickOnLoginButton().clickOnSignUpButton();
         SignUpPage signUpPage = new SignUpPage();
         signUpPage.inputEmailIntoField().inputFirstNameIntoField().
                 inputLastNameIntoField().inputPasswordIntoField().clickOnRegistrationRulesButton().
