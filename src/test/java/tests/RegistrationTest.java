@@ -15,7 +15,7 @@ public class RegistrationTest extends BaseTest{
         header.clickOnSignUpButton();
         SignUpPage signUpPage = new SignUpPage();
         signUpPage.inputEmailIntoField().inputFirstNameIntoField().
-                inputLastNameIntoField().clickOnRegistrationRulesButton().
+                inputLastNameIntoField().inputPasswordIntoField().clickOnRegistrationRulesButton().
                 clickOnRegistrationButton();
 
         //WebElement loginButton = webDriver.findElement(By.xpath("//*[@id=\"lgn\"]"));
