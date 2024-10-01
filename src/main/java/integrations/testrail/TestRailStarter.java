@@ -12,16 +12,17 @@ public class TestRailStarter {
     private static final Map<Integer, Result> resultsForTestCase = new HashMap<>();
 
     public static void main(String[] args) {
-        createTestCase();
+        createNewTestRun();
+
     }
 
     private static TestRail getTestRail() {
         return TestRail
-                .builder("https://testvadym123.testrail.io",
-                        "sulawados312000@gmail.com",
-                        "akD85k9LGKdgKci_"
+                .builder("https://mscw.testrail.io/",
+                        "moscow5@i.ua",
+                        "Qwerty2468@"
                 )
-                .applicationName("Test simple project")
+                .applicationName("Second")
                 .build();
     }
 
@@ -29,8 +30,8 @@ public class TestRailStarter {
         testRunId = getTestRail()
                 .runs()
                 .add(1, new Run()
-                        .setDescription("Перевірка одного тест кейсу")
-                        .setCaseIds(List.of(1)))
+                        .setDescription("P")
+                        .setCaseIds(List.of(2)))
                 .execute()
                 .getId();
     }
@@ -50,7 +51,7 @@ public class TestRailStarter {
         Section section = new Section().setName("Нова секція, сворена за допомогою інтеграції");
         Case testCase = new Case().setTitle("Тест кейс створений за допомогою інтеграції");
         int sectionId = getTestRail().sections().add(1, section).execute().getId();
-        testCase.setCustomFields(Map.of("steps", "Перший крок", "expected", "Очікування для першого кроку"));
+        testCase.setCustomFields(Map.of("steps", "Перший крок"));
         getTestRail().cases().add(sectionId, testCase, getTestRail().caseFields().list().execute()).execute();
     }
 }

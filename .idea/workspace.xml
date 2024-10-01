@@ -8,6 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff49526e-eeb6-4792-94bf-7ccc7150efb0" name="Changes" comment="Project updated">
+      <change afterPath="$PROJECT_DIR$/.idea/AllurePlugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/UserPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/maingruoptests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/secondgruoptests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/thirdgruoptests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AuthBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/EventsPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/UserPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/00dbdde0-df12-4ade-8207-5321c3fdb37b-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/01049ec0-45f2-4747-a1dd-ded3214c2e25-result.json" beforeDir="false" />
@@ -348,11 +360,16 @@
       <change beforePath="$PROJECT_DIR$/allure-results/f7a4c1dc-4162-455c-8e6b-9697ae674e3c-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/f92a4a5c-ec5e-4bcb-a385-d73379fa0ecc-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/ff927f86-3188-490c-882e-77451119b935-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/InitDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/InitDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/integrations/testrail/TestRailStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/integrations/testrail/TestRailStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Header.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testssuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AutoritationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SignUpPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -392,74 +409,94 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Header.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Maven.finalProject [clean].executor": "Run",
-    "Maven.finalProject [install].executor": "Run",
-    "Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:aggregate].executor": "Run",
-    "Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:install].executor": "Run",
-    "Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:report].executor": "Run",
-    "Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:serve].executor": "Run",
-    "Maven.finalProject [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.finalProject [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor": "Run",
-    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
-    "Notification.DoNotAsk-Vcs Important Messages": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.AutoritationTest.authorizationTest.executor": "Run",
-    "TestNG.AutoritationTest.executor": "Run",
-    "TestNG.AutoritationTest.openMainPageTest.executor": "Run",
-    "TestNG.AutoritationTest.registrationInvalidTest.executor": "Run",
-    "TestNG.AutoritationTest.registrationTest (1).executor": "Debug",
-    "TestNG.AutoritationTest.registrationTest.executor": "Run",
-    "TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml.executor": "Run",
-    "TestNG.RegistrationTest.executor": "Run",
-    "TestNG.RegistrationTest.openSignUpPage.executor": "Debug",
-    "TestNG.RegistrationTest.registrationTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/mosco/IdeaProjects/finalProject/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.171875",
-    "project.structure.side.proportion": "0.24557261",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EventsPage.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Header.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainPage.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestRailStarter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserPage.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.finalProject [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.finalProject [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:aggregate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.finalProject [io.qameta.allure:allure-maven:2.12.0:serve].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.finalProject [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.finalProject [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.AutoritationTest.authorizationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AutoritationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AutoritationTest.openMainPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AutoritationTest.registrationInvalidTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AutoritationTest.registrationTest (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AutoritationTest.registrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/maingruoptests.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/secondgruoptests.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testssuite.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/thirdgruoptests.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EventsPageTest.ShowEventsFestival.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EventsPageTest.ShowEventsWithKids.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EventsPageTest.addActivityEvents.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EventsPageTest.addEventEvents.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EventsPageTest.addLocationEvents.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EventsPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.authorizationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.openSignUpPage.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.RegistrationTest.registrationInvalidTest.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.RegistrationTest.registrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.registrationWithFacebook.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.registrationWithGoogle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UserPageTest.addSocialNetworkTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UserPageTest.changeFirstNameTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UserPageTest.changeLastNameTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UserPageTest.changeTelephoneNumberTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UserPageTest.changeUserLinkTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UserPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mosco/IdeaProjects/finalProject/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.171875&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24557261&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mosco\IdeaProjects\finalProject" />
       <recent name="C:\Users\mosco\IdeaProjects\finalProject\target" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml">
-    <configuration name="AutoritationTest.authorizationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.EventsPageTest.addEventEvents">
+    <configuration name="TestRailStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="integrations.testrail.TestRailStarter" />
       <module name="finalProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="integrations.testrail.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AutoritationTest" />
-      <option name="METHOD_NAME" value="authorizationTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testssuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="finalProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testssuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -467,7 +504,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EventsPageTest.addEventEvents" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="finalProject" />
       <extension name="coverage">
         <pattern>
@@ -476,44 +513,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.EventsPageTest" />
+      <option name="METHOD_NAME" value="addEventEvents" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventsPageTest.addLocationEvents" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.EventsPageTest" />
+      <option name="METHOD_NAME" value="addLocationEvents" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SignUpPageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest.openSignUpPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="finalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTest" />
-      <option name="METHOD_NAME" value="openSignUpPage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest.registrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="finalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTest" />
-      <option name="METHOD_NAME" value="registrationTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -522,11 +559,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testng.xml" />
-        <item itemvalue="TestNG.RegistrationTest" />
-        <item itemvalue="TestNG.AutoritationTest.authorizationTest" />
-        <item itemvalue="TestNG.RegistrationTest.registrationTest" />
-        <item itemvalue="TestNG.RegistrationTest.openSignUpPage" />
+        <item itemvalue="TestNG.EventsPageTest.addEventEvents" />
+        <item itemvalue="TestNG.C:/Users/mosco/IdeaProjects/finalProject/src/main/resources/testssuite.xml" />
+        <item itemvalue="Application.TestRailStarter" />
+        <item itemvalue="TestNG.EventsPageTest.addLocationEvents" />
+        <item itemvalue="TestNG.SignUpPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -611,7 +648,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727170286868</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Project updated">
+      <option name="closed" value="true" />
+      <created>1727190195460</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727190195460</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -639,17 +684,17 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/Waiter.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/RegistrationTest.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoSuchFieldError" package="java.lang" />
+          <option name="timeStamp" value="12" />
+        </breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/finalProject$C__Users_mosco_IdeaProjects_finalProject_src_main_resources_thirdgruoptests_xml.ic" NAME="$PROJECT_DIR$/src/main/resources/thirdgruoptests.xml Coverage Results" MODIFIED="1727458639377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

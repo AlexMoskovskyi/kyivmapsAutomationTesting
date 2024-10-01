@@ -45,9 +45,15 @@ public class Header extends BasePage {
     @FindBy(xpath = "//*[@class=\"header-td td-add tt-container\"]")
     protected WebElement ADD_EVENT_BUTTON;
 
-    @Step("Натиснути кнопку ")
-    public Header clickOnButton(WebElement webElement) {
-        waiter.waitForElementClickable(webElement).click();
+    @Step("Натиснути кнопку авторизація за допомогою Facebook")
+    public Header clickOnFacebookButton() {
+        waiter.waitForElementClickable(FACEBOOK_AUTH_BUTTON).click();
+        return this;
+    }
+
+    @Step("Натиснути кнопку авторизація за допомогою Google")
+    public Header clickOnGoogleButton() {
+        waiter.waitForElementClickable(GOOGLE_AUTH_BUTTON).click();
         return this;
     }
 

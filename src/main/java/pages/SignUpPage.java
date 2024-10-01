@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class SignUpPage extends Header {
     protected String trueEmail = "moscow5@i.ua";
-    protected String email = "asfhgfjgtvbbh@ukr.net";
+    protected String email = "csgfhgmj45vbbh@ukr.net";
     protected String password = "asdfghjk";
     protected String firstName = "Alex";
     protected String lastName = "MscW";
@@ -36,11 +36,18 @@ public class SignUpPage extends Header {
     @FindBy(xpath = "//*[@class=\"registration-completed\"]")
     public WebElement REGISTRATION_COMPLETED;
 
-   @Step("Ввести в рядок email")
-   public SignUpPage inputEmailIntoField() {
-       waiter.waitForElementVisibility(REG_EMAIL).sendKeys(email, Keys.ENTER);
-       return this;
-   }
+    @Step("Натиснути кнопку авторизації")
+    public SignUpPage clickOnLoginButton() {
+        Header header = new Header();
+        header.clickOnLoginButton().clickOnSignUpButton();;
+        return this;
+    }
+
+    @Step("Ввести в рядок email")
+    public SignUpPage inputEmailIntoField() {
+        waiter.waitForElementVisibility(REG_EMAIL).sendKeys(email, Keys.ENTER);
+        return this;
+    }
 
     @Step("Ввести в рядок вже зареєстрований email")
     public SignUpPage inputInvalidEmailIntoField() {
@@ -59,13 +66,14 @@ public class SignUpPage extends Header {
         waiter.waitForElementVisibility(REG_LAST_NAME).sendKeys(lastName, Keys.ENTER);
         return this;
     }
+
     @Step("Ввести в рядок Пароль")
     public SignUpPage inputPasswordIntoField() {
         waiter.waitForElementVisibility(REG_PASSWORD).sendKeys(password, Keys.ENTER);
         return this;
     }
 
-    @Step("Натиснути кнопку реєстрация ")
+    @Step("Відзначити поле я погоджуюсь з правилами використання ")
     public SignUpPage clickOnRegistrationRulesButton() {
         waiter.waitForElementClickable(REG_RULES_BUTTON).click();
         return this;
@@ -78,14 +86,14 @@ public class SignUpPage extends Header {
     }
 
     @Step("Отримуемо текст успішной реєстрації  ")
-    public String getRegistrationCompletedText( ) {
-       String registrationCompletedText = REGISTRATION_COMPLETED.getText();
+    public String getRegistrationCompletedText() {
+        String registrationCompletedText = REGISTRATION_COMPLETED.getText();
 
         return registrationCompletedText;
     }
 
     @Step("Отримуемо текст реєстрації  ")
-    public String getInvalidRegistrationText( ) {
+    public String getInvalidRegistrationText() {
         String invalidRegistrationText = INVALID_REGISTRATION.getText();
 
         return invalidRegistrationText;

@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class InitDriver {
     @Getter
-    private static WebDriver webDriver;
+    public static WebDriver webDriver;
 
     public static WebDriver initiateWebDriver() {
         WebDriverManager.chromedriver().setup();
